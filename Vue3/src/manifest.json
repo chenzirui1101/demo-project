@@ -1,0 +1,58 @@
+{
+    "name" : "兴宁旅游",
+    "appid" : "",
+    "description" : "梅州市兴宁市旅游景点推荐APP",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {},
+        "distribute" : {
+            "android" : {
+                "permissions" : [ "<uses-permission android:name=\"android.permission.INTERNET\"/>" ]
+            },
+            "ios" : {},
+            "sdkConfigs" : {}
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true
+        },
+        "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "兴宁旅游",
+        "router" : {
+            "mode" : "hash",
+            "base" : "./"
+        },
+        "devServer" : {
+            "port" : 5173,
+            "proxy" : {
+                "/api" : {
+                    "target" : "http://127.0.0.1:8000",
+                    "changeOrigin" : true
+                }
+            }
+        }
+    },
+    "vueVersion" : "3",
+    "uniStatistics" : {
+        "enable" : false
+    }
+}
