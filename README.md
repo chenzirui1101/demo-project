@@ -47,7 +47,7 @@ cd Django
 pip install -r requirements.txt
 python manage.py migrate          # 创建表
 python manage.py seed_data        # 导入兴宁景点数据
-python manage.py runserver
+python manage.py runserver xxx.xxx.x.xxx:8000 #换成自己的电脑ip
 看到 Starting development server at http://127.0.0.1:8000/ 即成功。
 ```
 
